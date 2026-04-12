@@ -133,13 +133,13 @@ nav a {
   font-size: 14px;
   color: #777;
 }
-/* ADD PAGE */
-/* * {
+/* ADD PAGE
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
+} 
 
 
 body {
@@ -247,8 +247,8 @@ nav a{
    margin-right: 15px;
    display: flex;
 }
-/* DETAIL PAGE */
-/* * {
+DETAIL PAGE
+          {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -275,17 +275,17 @@ body {
   font-weight: bold;
   margin-right: 20px;
 
-}
+} */
 
-.left {
+/* .left {
   display: flex;
   align-items: center;
 }
 
 nav a{
     margin: 0 10px;
-  text-decoration: none; */
-  /* color: #333;
+  text-decoration: none; 
+   color: #333;
   margin-right: 15px;
   margin-right: 15px;
 
@@ -317,10 +317,10 @@ nav a{
   height: 260px;
   object-fit: cover;
   margin-right: 20px;
-} */
+} 
 
 
-/* .show-info {
+ .show-info {
   flex: 1;
 }
 
@@ -355,15 +355,15 @@ nav a{
 }
 
 
-.info-box { */
-  /* background: #d9edf7;
+.info-box { 
+  background: #d9edf7;
   padding: 10px;
   margin: 15px 0;
   color: #31708f;
 }
+ */
 
-
-.episodes {
+/* .episodes {
   background: white;
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -388,10 +388,10 @@ nav a{
   font-size: 12px;
   color: gray;
   margin-bottom: 5px;
-} */
+} 
 
-/* LOGIN PAGE */
-/* body {
+ LOGIN PAGE 
+   body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #dfe3e8;
@@ -423,9 +423,9 @@ nav a{
 .nav-links a {
   text-decoration: none;
   color: #555;
-} */
+} 
 
-/* .auth-links a {
+.auth-links a {
   margin-left: 10px;
   padding: 6px 12px;
   border: 1px dashed #ccc;
@@ -454,9 +454,9 @@ nav a{
 .card h2 {
   margin-bottom: 20px;
 }
- */
+ 
 
-/* .card input {
+ .card input {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
@@ -482,14 +482,14 @@ nav a{
   color: white;
   border: none;
   margin-top: 10px;
-}
+} */
 
-.btn-google {
+/* .btn-google {
   width: 100%;
   padding: 10px;
   background: #dd4b39;
-  color: white; */
-  /* border: none;
+  color: white; 
+   border: none;
   margin-top: 10px;
 }
 
@@ -515,10 +515,10 @@ nav a{
 .left{
     margin-right: 15px;
     display: flex;
-    align-items: center */
-/* } */
-/* SIGNUP PAGE */
-/* body {
+    align-items: center 
+ } 
+ SIGNUP PAGE 
+ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #dfe3e8;
@@ -545,9 +545,9 @@ nav a{
   display: flex;
   gap: 20px;
   margin: 0;
-} */
+} 
 
-/* .nav-links a {
+ .nav-links a {
   text-decoration: none;
   color: #666;
 }
@@ -593,10 +593,10 @@ nav a{
   margin: 8px 0;
   border: 1px solid #ddd;
   border-radius: 3px;
-}
+} */
 
 
-.terms {
+/* .terms {
   font-size: 11px;
   color: #777;
   margin: 10px 0;
@@ -634,4 +634,4 @@ nav a{
     display: flex;
     margin-right: 15px;
     align-items: center
-}  */
+}   */ 

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Show-Trackr</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="navbar">
+      <!-- LEFT SIDE -->
+      <div class="left">
+        <div class="logo">ShowTrackr</div>
+
+        <nav>
+          <a href="/index.html">Home</a>
+          <a href="/add.html">Add</a>
+        </nav>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="log-i">
+        <a href="/login.html">Login</a>
+        <a href="/singup.html">Sign up</a>
+      </div>
+    </header>
+    
+    <section class="alphabet" id="alphabetSection">
+      <span>0-9</span>
+      <span>A</span><span>B</span><span>C</span><span>D</span> <span>E</span>
+      <span>F</span><span>G</span><span>H</span> <span>I</span><span>J</span>
+      <span>K</span><span>L</span> <span>M</span><span>N</span><span>O</span>
+      <span>P</span> <span>Q</span><span>R</span><span>S</span><span>T</span>
+      <span>U</span><span>V</span><span>W</span><span>X</span> <span>Y</span>
+      <span>Z</span>
+    </section>
+
+    <section class="categories" id="categorySection">
+      <button>Action</button>
+      <button>Adventure</button>
+      <button>Animation</button>
+      <button>children</button>
+      <button>Comedy</button>
+      <button>crime</button>
+      <button>Documentary</button>
+      <button>Drama</button>
+      <button>Family</button>
+      <button>Fantasy</button>
+      <button>fond</button>
+      <button>Home and Garden</button>
+      <button>Horror</button>
+      <button>Mini series</button>
+      <button>Mystary</button>
+      <button>News</button>
+      <button>Reality</button>
+      <button>Romance</button>
+      <button>Soft</button>
+      <button>Sport</button>
+      <button>Suspense</button>
+      <button>Talk Show</button>
+      <button>Inliller</button>
+      <button>Travel</button>
+    </section>
+
+    <main class="container">
+      <div class="header-row">
+        <h2>Top 12 Shows</h2>
+        <input type="text" placeholder="Search..." />
+      </div>
+
+      <div class="grid" id="showGrid">
+        
+        <div class="card" data-name="Game of Thrones" data-genre="Drama">
+          <img src="assets/images/gt.jpeg" />
+          <h3>Game of Thrones</h3>
+          <p>Episodes: 84</p>
+        </div>
+
+        <div class="card" data-name="Breaking Bad" data-genre="Crime">
+          <img src="assets/images/mother.jpeg" />
+          <h3>Breaking Bad</h3>
+          <p>Episodes: 79</p>
+        </div>
+
+        <div class="card" data-name="Dexter" data-genre="Crime">
+          <img
+            src="assets/images/bb.jpeg"
+          />
+          <h3>Dexter</h3>
+          <p>Episodes: 125</p>
+        </div>
+
+        <div class="card" data-name="How I Met Your Mother" data-genre="Comedy">
+          <img src="assets/images/dexter.jpeg" />
+          <h3>How I Met Your Mother</h3>
+          <p>Episodes: 219</p>
+        </div>
+<div class="card">
+          <img src="assets/images/jurassic.jpeg" />
+          <h3>welcome new country</h3>
+          <p>Episodes: 24</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/ps.jpeg" />
+          <h3>A popular British horror</h3>
+          <p>Episodes: 56</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/images/nobody.jpeg"
+          />
+          <h3>An action-comedy</h3>
+          <p>Episodes: 176</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/shelder.jpeg" />
+          <h3>Dead Poets Society</h3>
+          <p>Episodes: 219</p>
+        </div>
+
+
+      </div>
+    </main>
+    <script>
+  let cards = document.getElementsByClassName("card");
+
+ 
+  let letters = document.getElementById("alphabetSection").getElementsByTagName("span");
+
+  for (let i = 0; i letters.length; i++) {
+    letters[i].onclick = function () {
+      let letter = this.innerHTML.toLowerCase();
+
+      for (let j = 0; j < cards.length; j++) {
+        let name = cards[j].getAttribute("data-name").toLowerCase();
+
+        if (letter === "0-9") {
+          if (name[0] >= "0" && name[0] <= "9") {
+            cards[j].style.display = "block";
+          } else {
+            cards[j].style.display = "none";
+          }
+        } else {
+          if (name[0] === letter) {
+            cards[j].style.display = "block";
+          } else {
+            cards[j].style.display = "none";
+          }
+        }
+      }
+    };
+  }
+
+
+  let buttons = document.getElementById("categorySection").getElementsByTagName("button");
+
+  for (let i = 0; i  buttons.length; i++) {
+    buttons[i].onclick = function () {
+      let genre = this.innerHTML.toLowerCase();
+
+      for (let j = 0; j < cards.length; j++) {
+        let cardGenre = cards[j].getAttribute("data-genre").toLowerCase();
+
+        if (cardGenre === genre) {
+          cards[j].style.display = "block";
+        } else {
+          cards[j].style.display = "none";
+        }
+      }
+    };
+  }
+</script>
+  </body>
+</html>

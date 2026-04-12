@@ -27,7 +27,7 @@ body {
 
 }
 
-.left {
+.title-b {
   display: flex;
   align-items: center;
 }
@@ -41,7 +41,7 @@ nav a{
 
 }
 
-.auth a {
+.add-d a {
   margin: 0 10px;
   text-decoration: none;
   color: #333;

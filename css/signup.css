@@ -110,7 +110,7 @@ body {
   cursor: pointer;
 }
 
-.left{
+.title-d{
     display: flex;
     margin-right: 15px;
     align-items: center
